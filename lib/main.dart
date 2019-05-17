@@ -19,7 +19,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   @override
   Widget build(BuildContext context){
-    return Column(
+    return Padding(
+      padding: const EdgeInsets.only(top:40.0, left: 8.0),
+
+    child: Column(
       children: <Widget>[
       Text("Nr.1", textDirection: TextDirection.ltr),
       Text("Nr.2", textDirection: TextDirection.ltr),
@@ -29,11 +32,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         children: <Widget>[
         Text("Row.1", textDirection: TextDirection.ltr),
         Text("Row.2", textDirection: TextDirection.ltr),
-        Text("Row.3", textDirection: TextDirection.ltr),
-      ])//Row
+        
+      ])
 
       ],
-      );//Column
-
+      )//Column
+     );//Padding
     }//Widget
 }//class
