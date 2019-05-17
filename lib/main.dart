@@ -18,11 +18,17 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.green,
-      ),
+        primarySwatch: Colors.blue,
+      ),//theme
       home:      Container(
-        color: Colors.red),
-    );
-  }
-}
+        color: Colors.red,
+        child: Text("Halo!",
+          textDirection: TextDirection.rtl,
+          style: TextStyle(fontSize: 32.0,
+            color: Colors.white),
+          )
+        ),//Container fontsize has to be at least 2 digits e.g. 2.0 not 2
+    );//MaterialApp
+  }//Widget
+}//class
 
