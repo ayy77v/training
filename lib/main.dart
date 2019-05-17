@@ -15,29 +15,25 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
-  var myColor = Colors.red;
 
-  changeColor(){
-    setState((){
-    myColor = Colors.blue;
-    });//setState
-
-  }//changeColor
 
   @override
   Widget build(BuildContext context){
-    return Container(
-      color: myColor,
-      child: Center(
-        child: RaisedButton(
-          child: Text('clicked', textDirection: TextDirection.ltr),
-          onPressed: (){
-                 
-                 changeColor();
-            },
-            ),//RaisedButton
-        ),//Center
-      );//Container
+    return Column(
+      children: <Widget>[
+      Text("Nr.1", textDirection: TextDirection.ltr),
+      Text("Nr.2", textDirection: TextDirection.ltr),
+      Text("Nr.3", textDirection: TextDirection.ltr),
+      Row(
+        textDirection: TextDirection.ltr,
+        children: <Widget>[
+        Text("Row.1", textDirection: TextDirection.ltr),
+        Text("Row.2", textDirection: TextDirection.ltr),
+        Text("Row.3", textDirection: TextDirection.ltr),
+      ])//Row
+
+      ],
+      );//Column
 
     }//Widget
 }//class
