@@ -30,14 +30,19 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             child: Column(
               textDirection: TextDirection.ltr,
               children: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.person),
-                  onPressed: (){
-                    print("person");
-                  }
-                  ),
+
+
+
               Text("Child 2", textDirection: TextDirection.ltr),
               Text("Child 3", textDirection: TextDirection.ltr),
+                 
+
+              IconButton(
+                  icon: Icon(Icons.add),
+                  onPressed: (){
+                    print("add");
+ }
+                  ),
               ]
               )
             )
@@ -62,11 +67,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               )
             )
           )
-          )
-
+          ),
+    Image(
+      image: AssetImage("images/images.jpeg"),
+      )
       
       ],
       )//Column
      );//Padding
+
     }//Widget
 }//class
