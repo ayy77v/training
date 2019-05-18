@@ -27,10 +27,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           Card(
             child: Padding(
               padding: EdgeInsets.all(24.0),
-            child: Row(
+            child: Column(
               textDirection: TextDirection.ltr,
               children: <Widget>[
-              Text("Child 1", textDirection: TextDirection.ltr),
+                IconButton(
+                  icon: Icon(Icons.person),
+                  onPressed: (){
+                    print("person");
+                  }
+                  ),
               Text("Child 2", textDirection: TextDirection.ltr),
               Text("Child 3", textDirection: TextDirection.ltr),
               ]
@@ -45,7 +50,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             child: Row(
               textDirection: TextDirection.ltr,
               children: <Widget>[
-              Text("Child 1", textDirection: TextDirection.ltr),
+                IconButton(
+                  icon: Icon(Icons.person),
+                  onPressed: (){
+                    print("person");
+                  }
+                  ),
               Text("Child 2", textDirection: TextDirection.ltr),
               Text("Child 3", textDirection: TextDirection.ltr),
               ]
